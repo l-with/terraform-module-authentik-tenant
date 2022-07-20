@@ -9,9 +9,10 @@ resource "null_resource" "authentik-bootstrap-tenant" {
     }
   }
   triggers = {
-    authentik_url            = var.authentik_url
-    authentik_token          = var.authentik_token
-    authentik_tenant_domain  = var.authentik_tenant_domain
-    authentik_tenant_default = var.authentik_tenant_default
+    authentik_module_tenant_dummy = ""
+    authentik_url                 = var.authentik_url
+    authentik_token               = var.authentik_token
+    authentik_tenant_domain       = var.authentik_tenant_domain
+    authentik_tenant_default      = var.authentik_tenant_default
   }
 }
