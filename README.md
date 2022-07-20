@@ -6,9 +6,9 @@ Authentik comes with predefined resources.
 The anchor is the default tenant, which is marked as 
 to be used for each domain that doesn't have a dedicated tenant.
 
-As a consequence with the 
-[terraform provider authentik](https://registry.terraform.io/providers/goauthentik/authentik) 
-it is not possible to create a new tenant
+As a consequence the 
+[terraform-provider authentik](https://registry.terraform.io/providers/goauthentik/authentik) 
+can not create a new tenant
 to be used for each domain that doesn't have a dedicated tenant,
 since there could only be one tenant with this characteristic.
 
