@@ -40,7 +40,9 @@ for example a new
 
 ```
 resource "authentik_tenant" "default" {
-  domain         =  "${module.tenant.authentik_module_tenant_dummy}."
-  default        = true
+  domain           =  "${module.tenant.authentik_module_tenant_dummy}."
+  default          = true
+  branding_logo    = "/static/dist/assets/icons/icon_left_brand.svg"
+  branding_favicon = "/static/dist/assets/icons/icon.png"
 }
 ```
