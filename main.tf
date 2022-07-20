@@ -8,4 +8,10 @@ resource "null_resource" "authentik-bootstrap-tenant" {
       AUTHENTIK_DEFAULT_TENANT_DEFAULT = var.authentik_tenant_default
     }
   }
+  triggers = {
+    authentik_url            = var.authentik_url
+    authentik_token          = var.authentik_token
+    authentik_tenant_domain  = var.authentik_tenant_domain
+    authentik_tenant_default = var.authentik_tenant_default
+  }
 }
