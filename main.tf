@@ -4,8 +4,8 @@ resource "null_resource" "authentik-bootstrap-tenant" {
     environment = {
       AUTHENTIK_URL                    = var.authentik_url
       AUTHENTIK_TOKEN                  = var.authentik_token
-      AUTHENTIK_DEFAULT_TENANT_DOMAIN  = var.authentik_default_tenant_domain
-      AUTHENTIK_DEFAULT_TENANT_DEFAULT = var.authentik_default_tenant_default
+      AUTHENTIK_DEFAULT_TENANT_DOMAIN  = var.authentik_tenant_domain
+      AUTHENTIK_DEFAULT_TENANT_DEFAULT = var.authentik_tenant_default
     }
   }
 }
