@@ -29,7 +29,7 @@ module "tenant" {
 }
  ```
 
-The tenant is selected by the input variable `authentik_tenant_domain`.
+The tenant is selected by the input variable `authentik_tenant_domain` which default value is `"authentik-default"`.
 
 The module provides an output value `authentik_module_tenant_dummy` 
 that depends on the null_resource with the local-exec.
